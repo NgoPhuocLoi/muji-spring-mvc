@@ -1,0 +1,66 @@
+<header>
+  <div
+    class="py-[10px] pl-[13%] pr-[13%] flex justify-between items-center border border-t-0 border-l-0 border-r-0"
+  >
+    <div class="w-[200px]">
+      <a href="#">
+        <img class="w-full" src="https://img.muji.eu/logo.png" alt="" />
+      </a>
+    </div>
+
+    <div class="w-[55%] mt-[10px] ml-[30px] h-auto">
+      <div class="mx-[10px]">
+        <form action="">
+          <input
+            placeholder="Search MUJI products"
+            type="text"
+            class="w-[90%] p-[10px] border text-[10pt] leading-none border-gray-300 rounded-md"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="flex items-center">
+      <a href="#" class="block my-[10px] mx-[15px] w-[25px] h-[25px]">
+        <div class="">
+          <img
+            class="w-full"
+            src="https://img.muji.eu/img/icn/moa/ACCOUNT_thick.svg"
+            alt=""
+          />
+        </div>
+      </a>
+
+      <a href="#" class="block my-[10px] mx-[15px] w-[25px] h-[25px]">
+        <div class="">
+          <img
+            class="w-full"
+            src="https://img.muji.eu/img/icn/moa/WISHLIST_thick.svg"
+            alt=""
+          />
+        </div>
+      </a>
+
+      <a href="#" class="block my-[10px] mx-[15px] w-[25px] h-[25px]">
+        <div class="">
+          <img
+            class="w-full"
+            src="https://img.muji.eu/IMG/ICN/MOA/CART_thick.svg"
+            alt=""
+          />
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="py-[10px] pl-[13%] pr-[13%] flex justify-between items-center border border-t-0 border-l-0 border-r-0"
+  >
+    <div
+      class="p-[5px] pl-0 hover:text-red-800 hover:underline"
+      th:each="item : ${menuItems}"
+    >
+      <a href="#" th:text="${item}"></a>
+    </div>
+  </div>
+</header>
