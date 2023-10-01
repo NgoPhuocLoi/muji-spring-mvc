@@ -5,8 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUJI</title>
     <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div th:replace="~{/components/header}"></div>
+
+    <div class="pl-[13%] pr-[13%] w-full h-[340px] bg-blue-200">
+      <!-- Slider main container -->
+      <div class="swiper w-full h-full">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide p-2">
+            <a href="#" class="w-full flex items-center h-full">
+              <img
+                src="https://img.muji.eu/img/idx/jpg/4511_LE_UK.jpg"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+      });
+    </script>
   </body>
 </html>
